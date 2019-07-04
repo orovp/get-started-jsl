@@ -28,7 +28,7 @@ class TestSharedLibrary extends BasePipelineTest {
     @Test
     void library_annotation() throws Exception {
         boolean exception = false
-        def library = library().name('shared-library')
+        def library = library().name('getStarted-jsl')
                                .defaultVersion("master")
                                .allowOverride(false)
                                .implicit(false)

@@ -52,8 +52,8 @@
         </resources>
         <testResources>
             <testResource>
-                <directory>../shared-library</directory>
-                <targetPath>libs/shared-library@master</targetPath>
+                <directory>../</directory>
+                <targetPath>libs/getStarted-jsl@master</targetPath>
             </testResource>
         </testResources>
         <plugins>

@@ -1,6 +1,6 @@
 package io.jenkins.pipeline.sample
 
-@Library('shared-library')
+@Library('getStarted-jsl')
 import io.jenkins.pipeline.sample.Utils
 
 sh acme.name
