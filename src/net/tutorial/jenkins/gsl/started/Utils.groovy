@@ -1,4 +1,4 @@
-package io.jenkins.pipeline.sample
+package net.tutorial.jenkins.gsl.started
 
 class Utils implements Serializable {
 
