@@ -1,15 +1,16 @@
 package net.tutorial.jenkins.gsl.started.tests.integration
 
-import com.lesfurets.jenkins.unit.BasePipelineTest
+import static com.lesfurets.jenkins.unit.global.lib.LibraryConfiguration.library
+import static com.lesfurets.jenkins.unit.global.lib.LocalSource.localSource
+
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TemporaryFolder
 
-import static com.lesfurets.jenkins.unit.global.lib.LibraryConfiguration.library
-import static com.lesfurets.jenkins.unit.global.lib.LocalSource.localSource
+import com.lesfurets.jenkins.unit.BasePipelineTest
 
-class HttpRequest extends BasePipelineTest {
+class TestHttpRequest extends BasePipelineTest {
 
     @Rule
     public TemporaryFolder folder = new TemporaryFolder()
@@ -37,6 +38,5 @@ class HttpRequest extends BasePipelineTest {
         helper.registerSharedLibrary(library)
         runScript('net/tutorial/jenkins/gsl/started/tests/integration/pipelineHttpRequest.groovy')
         printCallStack()
-
     }
 }
